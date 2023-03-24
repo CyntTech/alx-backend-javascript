@@ -10,9 +10,9 @@ function countStudents(path) {
     console.log(students);
     console.log(`Number of students: ${students.length}`);
 
-    const fields = {};
+    const fields = {}; // stores the count and list
     students.forEach((student) => {
-      const field = student[3];
+      const field = student[3]; // Gets the fields of the student
       if (!fields[field]) {
         fields[field] = {
           count: 0,
